@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/iuapmobile.um.css">
+		<link rel="stylesheet" href="../css/font-icons.css">
+		<link rel="stylesheet" href="../css/settings.css">
+		<script src="../js/summer.js" ></script>
+		<script src="../js/jquery.min.js" ></script>
+		<script src="../js/Frameworks/iuapmobile.frameworks.ui.js" ></script>
+		<script src="../js/vue.js" ></script>
+
+	</head>
+	<body>
+		<div class="um-win" id="app">
+		
+
+<div class="um-header-light">
+	<a href="#" class="um-back" @click="back"></a>
+	<h3>设置</h3>
+	<div class="um-header-btns">
+		<i class="ti-more" style="transform: rotate(90deg);"></i>
+	</div>
+</div>
+
+			<div class="um-content">
+				<ul class="um-list">
+					<li>
+						<div class="um-list-item">
+							<div class="um-list-item-inner">
+								<span class="h pa um-box-vc um-red f20 pl5" >*</span>
+								<div class="um-list-item-left pl15">
+									memberId：
+								</div>
+								<div class="um-list-item-right">
+									<input id="memberId" v-model="memberId"  type="text" class="form-control" placeholder="请输入memberId" >
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="um-list-item">
+							<div class="um-list-item-inner">
+								<span class="h pa um-box-vc um-red f20 pl5" >*</span>
+								<div class="um-list-item-left pl15">
+									qzId：
+								</div>
+								<div class="um-list-item-right">
+									<input id="qzId" type="text" v-model="qzId" class="form-control" placeholder="请输入qzId">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="um-list-item">
+							<div class="um-list-item-inner">
+								以上用于登录，下面数据用于签到
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="um-list-item">
+							<div class="um-list-item-inner">
+								<span class="h pa um-box-vc um-red f20 pl5" >*</span>
+								<div class="um-list-item-left pl15">
+									accountId：
+								</div>
+								<div class="um-list-item-right">
+									<input id="accountId" v-model="accountId" type="text" class="form-control" placeholder="请输入accountId">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="um-list-item">
+							<div class="um-list-item-inner">
+								<span class="h pa um-box-vc um-red f20 pl5" >*</span>
+								<div class="um-list-item-left pl15">
+									imei：
+								</div>
+								<div class="um-list-item-right">
+									<input id="imei" v-model="imei" type="text" class="form-control" placeholder="请输入imei">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="um-list-item">
+							<div class="um-list-item-inner">
+								<span class="h pa um-box-vc um-red f20 pl5" >*</span>
+								<div class="um-list-item-left pl15">
+									wifiName：
+								</div>
+								<div class="um-list-item-right">
+									<input v-model="wifiName" type="text" class="form-control" placeholder="请输入wifiName" value="emm">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="um-list-item">
+							<div class="um-list-item-inner">
+								<span class="h pa um-box-vc um-red f20 pl5" >*</span>
+								<div class="um-list-item-left pl15">
+									wifiMac：
+								</div>
+								<div class="um-list-item-right">
+									<input v-model="wifiMac" type="text" class="form-control" placeholder="请输入wifiMac" value="ae:fd:ce:d:5e:30">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="um-list-item">
+							<div class="um-list-item-inner">
+								<span class="h pa um-box-vc um-red f20 pl5" >*</span>
+								<div class="um-list-item-left pl15">
+									deviceModel：
+								</div>
+								<div class="um-list-item-right">
+									<input v-model="deviceModel" type="text" class="form-control" placeholder="请输入deviceModel" value="iPhone10,3">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="um-list-item">
+							<div class="um-list-item-inner">
+								<span class="h pa um-box-vc um-red f20 pl5" >*</span>
+								<div class="um-list-item-left pl15">
+									deviceName：
+								</div>
+								<div class="um-list-item-right">
+									<input v-model="deviceName" type="text" class="form-control" placeholder="请输入deviceName" value="Xiaomi">
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+				<div class="p15">
+					<button class="btn um-btn-success" v-on:click="save">
+						保存基础数据
+						<i class="ti-save"></i>
+					</button>
+				</div>
+				<div class="p15">
+					<button class="btn um-btn-danger" v-on:click="remove">
+						清除缓存基础数据
+						<i class="ti-close"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="um-footer">
+
+		</div>
+		</div>
+		<script src="../js/settings.js" ></script>
+	</body>
+</html>

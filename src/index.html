@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/font-icons.css">
+		<link rel="stylesheet" href="css/iconfont/iconfont.css">
+		<link rel="stylesheet" href="css/iuapmobile.um.css">
+		<script type="text/javascript" src="js/aes.js"></script>
+		<script type="text/javascript" src="js/mode-ecb.js"></script>
+		<script src="js/summer.js" ></script>
+		<script src="js/jquery.min.js" ></script>
+		<script src="js/Frameworks/iuapmobile.frameworks.ui.js" ></script>
+		<script src="js/index.js" ></script>
+	</head>
+	<body>
+		<div id="win" class="um-win" >
+			<div id="header" class="um-header">
+				<a href="#" class="um-back">返回</a>
+				<h3>吃水不忘挖井人</h3>
+				<a href="#" class="um-header-right f20 iconfont icon-settings" onclick="openSettings()"></a>
+			</div>
+
+			<div id="content" class="um-content p15">
+
+			</div>
+
+			<div id="footer" class="um-footer">
+				<div class="um-footerbar">
+					<a id="item0" href="#" class="um-footerbar-item"> <i class="ti-comments f20"></i>
+					<div class="f12 lh1">
+						消息
+					</div> </a>
+					<a id="item1" href="#" class="um-footerbar-item"> <i class="ti-notepad f20"></i>
+					<div class="f12 lh1">
+						日程
+					</div> </a>
+					<a id="item2" href="#" class="um-footerbar-item active"> <i class="ti-agenda f20"></i>
+					<div class="f12 lh1">
+						通讯录
+					</div> </a>
+					<a id="item3" href="#" class="um-footerbar-item"> <i class="ti-user f20"></i>
+					<div class="f12 lh1">
+						我
+					</div> </a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--script type="text/javascript">
+		
+		 debugger;
+		 function Encrypt(word){
+		 var key = CryptoJS.enc.Utf8.parse("light-app-123456");
+		 //var key = "light-app-123456";
+		 var srcs = CryptoJS.enc.Utf8.parse(word);
+		 //var srcs = word;
+		 var encrypted = CryptoJS.AES.encrypt(srcs, key, {mode:CryptoJS.mode.ECB,padding: CryptoJS.pad.Pkcs7});
+		 var ciphertext = encrypted.ciphertext.toString();
+		 var  hex = CryptoJS.enc.Hex.parse(ciphertext);
+		 alert(ciphertext == hex);
+		 //var  Utf8 = CryptoJS.enc.Utf8.parse(ciphertext);
+		 //var  Base64 = CryptoJS.enc.Base64.stringify(ciphertext);
+		 //var  base64 = CryptoJS.enc.Base64.stringify(hex);
+
+		 return base64;
+		 //return CryptoJS.enc.Utf8.parse(CryptoJS.enc.Base64.stringify(encrypted.ciphertext));
+		 //return CryptoJS.enc.Utf8.parse(CryptoJS.enc.Base64.stringify(encrypted.toString()));
+		 //return CryptoJS.enc.Base64.stringify(CryptoJS.enc.Utf8.parse(encrypted.toString()));
+
+		 //alert(CryptoJS.enc.Utf8.parse(encrypted.toString()));
+		 //alert(CryptoJS.enc.Base64.stringify(encrypted.toString()));
+		 //return encrypted.toString();
+		 }
+		 function Decrypt(word){
+		 var key = CryptoJS.enc.Utf8.parse("light-app-123456");
+
+		 var decrypt = CryptoJS.AES.decrypt(word, key, {mode:CryptoJS.mode.ECB,padding: CryptoJS.pad.Pkcs7});
+		 return CryptoJS.enc.Utf8.stringify(decrypt).toString();
+		 }
+
+		 //var xx = '{"signTime":1521870629234,"isRoot":0,"longitude":"116.2363677300347","latitude":"40.06752522786459","wifiName":"emm","deviceModel":"iPhone10,3","address":"用友产业园","accountId":102031,"wifiMac":"ae:fd:ce:d:5e:30","imei":"865422039357389","deviceName":"GNote","szId":5417}';
+		 var xx= '{"signTime":1521870629234,"isRoot":0,"longitude":"116.2363677300347","latitude":"40.06752522786459","wifiName":"360wifi-001","deviceModel":"Mi Note 3","address":"用友产业园","accountId":102031,"wifiMac":"ae:fd:ce:d3:5e:30","imei":"865422039357389","deviceName":"GNote","szId":5417}';
+		 var yy = Encrypt(xx);
+		 alert(yy);
+		 // alert(Decrypt(Encrypt(xx)))
+		 
+	</script-->
+</html>
