@@ -1,28 +1,28 @@
 
-2018-03-26 00:46:22:
+2018-03-27 09:30:06:
 构建服务器收到用户[debugger]构建请求,开始排队构建...
 
-2018-03-26 00:46:22:
+2018-03-27 09:30:06:
 排队完成！开始构建app...
 
-2018-03-26 00:46:22:
+2018-03-27 09:30:06:
 获取到用户配置的系统默认的插件：[cordova-plugin-http]...
 
-2018-03-26 00:46:22:
+2018-03-27 09:30:06:
 获取到用户配置的系统默认的插件：[cordova-plugin-camera]...
 
-2018-03-26 00:46:22:
+2018-03-27 09:30:06:
 获取到用户配置的系统默认的插件：[cordova-plugin-file]...
 
-2018-03-26 00:46:22:
+2018-03-27 09:30:06:
 用户没有配置默认证书，将使用系统默认证书...
 
-2018-03-26 00:46:22:
+2018-03-27 09:30:06:
 获取到构建使用的证书别名：[ump]...
 
 createCordovaProject:
      [echo] === start create cordova project ===
-     [echo] /usr/local/bin/cordova create /Users/ispace/BuildServer/umpfiles/userfiles/1195/3267/project/anywhere
+     [echo] /usr/local/bin/cordova create /Users/ispace/BuildServer/umpfiles/userfiles/1195/3622/project/anywhere
      [echo] 			com.yonyou.anywhere anywhere
      [echo] 		
      [exec] Creating a new cordova project.
@@ -56,7 +56,7 @@ addPlatform:
      [echo] === end add platform===
 
 BUILD SUCCESSFUL
-Total time: 8 seconds
+Total time: 10 seconds
 
 initCordovaPlugins:
      [echo] add plugin in cordovaproject
@@ -113,33 +113,35 @@ initCordovaPlugins:
      [echo] === end add plugin ===
 
 BUILD SUCCESSFUL
-Total time: 15 seconds
+Total time: 16 seconds
 
 buildAndroid:
      [echo] Start Build Android App
      [echo] /usr/local/bin/cordova build android --release -- --keystore /Users/dongzhk/BuildServer/umpfiles/profile/ump.keystore --alias ump --storePassword 123456 --password umpump
-     [echo] Build base Dir /Users/ispace/BuildServer/umpfiles/userfiles/1195/3267/project/anywhere
+     [echo] Build base Dir /Users/ispace/BuildServer/umpfiles/userfiles/1195/3622/project/anywhere
      [exec] ANDROID_HOME=/Applications/android-sdk-macosx-r16
      [exec] JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home
-     [exec] Reading build config file: /Users/ispace/BuildServer/umpfiles/userfiles/1195/3267/project/anywhere/build.json
+     [exec] Reading build config file: /Users/ispace/BuildServer/umpfiles/userfiles/1195/3622/project/anywhere/build.json
      [exec] Reading the keystore from: /Users/ispace/BuildServer/umpfiles/profile/32/ump_20170619164555.keystore
      [exec] Subproject Path: CordovaLib
+     [exec] Starting a new Gradle Daemon for this build (subsequent builds will be faster).
      [exec] Parallel execution is an incubating feature.
      [exec] Repository https://repo1.maven.org/maven2/ replaced by http://maven.aliyun.com/nexus/content/groups/public/.
      [exec] Repository https://jcenter.bintray.com/ replaced by http://maven.aliyun.com/nexus/content/groups/public/.
      [exec] Repository https://repo1.maven.org/maven2/ replaced by http://maven.aliyun.com/nexus/content/groups/public/.
      [exec] Repository https://jcenter.bintray.com/ replaced by http://maven.aliyun.com/nexus/content/groups/public/.
      [exec] Incremental java compilation is an incubating feature.
+     [exec] :preBuild
+     [exec] :CordovaLib:preBuild
      [exec] :preBuild UP-TO-DATE
      [exec] :CordovaLib:preBuild UP-TO-DATE
-     [exec] :preReleaseBuild
-     [exec] :CordovaLib:preReleaseBuild
      [exec] :preReleaseBuild UP-TO-DATE
-     [exec] :CordovaLib:preReleaseBuild UP-TO-DATE
+     [exec] :CordovaLib:preReleaseBuild
      [exec] :checkReleaseManifest
+     [exec] :CordovaLib:preReleaseBuild UP-TO-DATE
      [exec] :CordovaLib:checkReleaseManifest
-     [exec] :CordovaLib:prepareReleaseDependencies
      [exec] :preDebugBuild UP-TO-DATE
+     [exec] :CordovaLib:prepareReleaseDependencies
      [exec] :preDebugAndroidTestBuild UP-TO-DATE
      [exec] :generateReleaseBuildConfig
      [exec] :CordovaLib:compileReleaseAidl
@@ -152,16 +154,16 @@ buildAndroid:
      [exec] :compileReleaseNdk UP-TO-DATE
      [exec] :mergeReleaseShaders
      [exec] :CordovaLib:compileReleaseShaders
-     [exec] :CordovaLib:generateReleaseAssets
-     [exec] :CordovaLib:mergeReleaseAssets
      [exec] :compileReleaseShaders
-     [exec] :CordovaLib:mergeReleaseProguardFiles
      [exec] :generateReleaseAssets
      [exec] :processReleaseJavaRes
-     [exec] :CordovaLib:packageReleaseRenderscript UP-TO-DATE
+     [exec] :CordovaLib:generateReleaseAssets
+     [exec] :CordovaLib:mergeReleaseAssets
      [exec] :processReleaseJavaRes UP-TO-DATE
-     [exec] :CordovaLib:compileReleaseRenderscript
      [exec] :validateSigningRelease
+     [exec] :CordovaLib:mergeReleaseProguardFiles
+     [exec] :CordovaLib:packageReleaseRenderscript UP-TO-DATE
+     [exec] :CordovaLib:compileReleaseRenderscript
      [exec] :CordovaLib:generateReleaseResValues
      [exec] :CordovaLib:generateReleaseResources
      [exec] :CordovaLib:packageReleaseResources
@@ -179,6 +181,7 @@ buildAndroid:
      [exec] :CordovaLib:transformNative_libsWithMergeJniLibsForRelease
      [exec] :CordovaLib:transformNative_libsWithSyncJniLibsForRelease
      [exec] :CordovaLib:bundleRelease
+     [exec] :CordovaLib:preDebugBuild
      [exec] :prepareAndroidCordovaLibUnspecifiedReleaseLibrary
      [exec] :CordovaLib:preDebugBuild UP-TO-DATE
      [exec] :CordovaLib:checkDebugManifest
@@ -226,9 +229,9 @@ buildAndroid:
      [exec] :generateReleaseResources
      [exec] :mergeReleaseResources
      [exec] :processReleaseManifest
-     [exec] [:yyemmsdk:] /Users/ispace/BuildServer/umpfiles/userfiles/1195/3267/project/anywhere/platforms/android/build/intermediates/exploded-aar/yyemmsdk/AndroidManifest.xml:30:5-79 Warning:
+     [exec] [:yyemmsdk:] /Users/ispace/BuildServer/umpfiles/userfiles/1195/3622/project/anywhere/platforms/android/build/intermediates/exploded-aar/yyemmsdk/AndroidManifest.xml:30:5-79 Warning:
      [exec] 	Element uses-permission#android.permission.ACCESS_FINE_LOCATION at [:yyemmsdk:] AndroidManifest.xml:30:5-79 duplicated with element declared at [:yyemmsdk:] AndroidManifest.xml:27:5-79
-     [exec] /Users/ispace/BuildServer/umpfiles/userfiles/1195/3267/project/anywhere/platforms/android/AndroidManifest.xml:6:5-25:19 Warning:
+     [exec] /Users/ispace/BuildServer/umpfiles/userfiles/1195/3622/project/anywhere/platforms/android/AndroidManifest.xml:6:5-25:19 Warning:
      [exec] 	application@android:allowBackup was tagged at AndroidManifest.xml:6 to replace other declarations but no other declaration present
      [exec] :processReleaseResources
      [exec] :generateReleaseSources
@@ -236,7 +239,7 @@ buildAndroid:
      [exec] :compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
      [exec] 注: 某些输入文件使用或覆盖了已过时的 API。
      [exec] 注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
-     [exec] 注: /Users/ispace/BuildServer/umpfiles/userfiles/1195/3267/project/anywhere/platforms/android/src/org/apache/cordova/file/AssetFilesystem.java使用了未经检查或不安全的操作。
+     [exec] 注: /Users/ispace/BuildServer/umpfiles/userfiles/1195/3622/project/anywhere/platforms/android/src/org/apache/cordova/file/AssetFilesystem.java使用了未经检查或不安全的操作。
      [exec] 注: 有关详细信息, 请使用 -Xlint:unchecked 重新编译。
      [exec] :compileReleaseSources
      [exec] :lintVitalRelease
@@ -244,9 +247,9 @@ buildAndroid:
      [exec] :transformClassesWithJarMergingForRelease
      [exec] :collectReleaseMultiDexComponents
      [exec] :transformClassesWithMultidexlistForRelease
-     [exec] :transformClassesWithDexForRelease
-     [exec] :mergeReleaseJniLibFolderswarning: Ignoring InnerClasses attribute for an anonymous inner class
-     [exec] (net.lingala.zip4j.unzip.Unzip$1) that doesn't come with an
+     [exec] :transformClassesWithDexForReleasewarning: Ignoring InnerClasses attribute for an anonymous inner class
+     [exec] :mergeReleaseJniLibFolders
+     [exec] (net.lingala.zip4j.unzip.Unzip$2) that doesn't come with an
      [exec] associated EnclosingMethod attribute. This class was probably produced by a
      [exec] compiler that did not target the modern .class file format. The recommended
      [exec] solution is to recompile the class from source, using an up-to-date compiler
@@ -254,7 +257,7 @@ buildAndroid:
      [exec] this warning is that reflective operations on this class will incorrectly
      [exec] indicate that it is *not* an inner class.
      [exec] warning: Ignoring InnerClasses attribute for an anonymous inner class
-     [exec] (net.lingala.zip4j.unzip.Unzip$2) that doesn't come with an
+     [exec] (net.lingala.zip4j.unzip.Unzip$1) that doesn't come with an
      [exec] associated EnclosingMethod attribute. This class was probably produced by a
      [exec] compiler that did not target the modern .class file format. The recommended
      [exec] solution is to recompile the class from source, using an up-to-date compiler
@@ -294,17 +297,17 @@ buildAndroid:
      [exec] 
      [exec] BUILD SUCCESSFUL
      [exec] 
-     [exec] Total time: 11.545 secs
+     [exec] Total time: 35.589 secs
      [exec] Built the following apk(s): 
-     [exec] 	/Users/ispace/BuildServer/umpfiles/userfiles/1195/3267/project/anywhere/platforms/android/build/outputs/apk/android-release.apk
+     [exec] 	/Users/ispace/BuildServer/umpfiles/userfiles/1195/3622/project/anywhere/platforms/android/build/outputs/apk/android-release.apk
      [echo] End Build Android App
      [echo] start move apk and asserts
-     [move] Moving 1 file to /Users/ispace/BuildServer/umpfiles/userfiles/1195/3267/output/install
-      [zip] Building zip: /Users/ispace/BuildServer/umpfiles/userfiles/1195/3267/output/install/anywhere_assets.zip
+     [move] Moving 1 file to /Users/ispace/BuildServer/umpfiles/userfiles/1195/3622/output/install
+      [zip] Building zip: /Users/ispace/BuildServer/umpfiles/userfiles/1195/3622/output/install/anywhere_assets.zip
      [echo] end move apk and asserts
      [echo] delete build dir add by dongzhk
-   [delete] Deleting directory /Users/ispace/BuildServer/umpfiles/userfiles/1195/3267/project/anywhere/platforms/android/build
+   [delete] Deleting directory /Users/ispace/BuildServer/umpfiles/userfiles/1195/3622/project/anywhere/platforms/android/build
      [echo] end delete build dir by dongzhk
 
 BUILD SUCCESSFUL
-Total time: 14 seconds
+Total time: 38 seconds
