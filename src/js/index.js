@@ -228,8 +228,10 @@ function encryptSignIn(token, encryptedAttentance) {
 var G_sys_data = null;
 function getParam(param) {
 	G_sys_data = summer.getStorage("sys_data");
-	if (!G_sys_data)
+	if (!G_sys_data) {
+		alert("没有基础数据，请先录入基础数据，然后保存再使用签到功能");
 		return false;
+	}
 
 	//var paramValue = summer.getStorage("sys_" + param);
 	var paramValue = G_sys_data["sys_" + param];
